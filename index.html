@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SF Impact Analyzer Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #18202b; --muted: #556170; --accent: #0b5cab; --line: #dde3ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f141b; --fg: #e4e9ef; --muted: #9aa7b6; --accent: #6db3ff; --line: #2c3542; color-scheme: dark; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .date { color: var(--muted); margin: 0 0 24px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  .box { border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>SF Impact Analyzer Privacy Policy</h1>
+  <p class="date">Last updated: October 15, 2026</p>
+
+  <div class="box"><b>In short:</b> SF Impact Analyzer does not collect, store on any server, sell or share your data. Everything happens inside your browser, and the extension only talks to your own Salesforce org.</div>
+
+  <h2>What the extension accesses</h2>
+  <ul>
+    <li><b>Your Salesforce session cookie</b> for the org open in the current tab. It is used only to send read-only requests to that same org's official Salesforce REST and Tooling APIs. It is not saved by the extension and is never sent anywhere else.</li>
+    <li><b>Salesforce metadata</b> from your org, such as Apex code, Flow definitions, Lightning components, field definitions and permission settings, so the extension can show where a field, object or class is used.</li>
+    <li><b>The address of the Salesforce page you are on</b>, to know which field, object or class you want to analyze.</li>
+  </ul>
+
+  <h2>What is stored, and where</h2>
+  <ul>
+    <li>Downloaded metadata is cached in your browser (IndexedDB) so later searches are faster. You can clear it at any time from the extension menu ("Refresh metadata cache") or by removing the extension.</li>
+    <li>Your recent searches for each org are kept in Chrome's local extension storage on your device.</li>
+  </ul>
+
+  <h2>What the extension does not do</h2>
+  <ul>
+    <li>It does not send any data to the developer or to any server other than your own Salesforce org.</li>
+    <li>It does not use analytics, tracking, advertising or third-party services.</li>
+    <li>It does not change anything in your Salesforce org. All requests are read-only.</li>
+    <li>It does not sell or transfer user data to third parties.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>The extension asks for access to Salesforce domains only (<code>*.salesforce.com</code>, <code>*.force.com</code>, <code>*.salesforce-setup.com</code>), plus the cookies, side panel, storage and context menu permissions needed for the features above.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be published on this page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <b>saranshbatham21@gmail.com</b></p>
+
+  <footer>SF Impact Analyzer is an independent tool and is not affiliated with or endorsed by Salesforce, Inc.</footer>
+</main>
+</body>
+</html>
